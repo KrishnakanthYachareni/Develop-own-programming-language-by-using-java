@@ -1,0 +1,15 @@
+start
+	decvar n, f
+	
+	see "Enter a number: "
+	give n
+	
+	set f as 1
+	loop n.num > 1
+		set f as f.num*n.num
+		dec n by 1
+	end
+	
+	see "Factorial = " +f.txt
+	wait
+end
